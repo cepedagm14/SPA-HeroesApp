@@ -7,8 +7,6 @@ export const Navbar = () => {
 
   const { user, logout } = useContext(AuthContext);
 
-  console.log(user);
-
   const onLogout = () => {
     logout()
     navigate("/login", {
@@ -16,7 +14,6 @@ export const Navbar = () => {
     });
 
   };
-  console.log(logout);
 
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
